@@ -83,3 +83,27 @@
     background-repeat: no-repeat;
     background-position: center center;
 }
+
+/* circle icon */
+.circle-icon {
+    display: inline-block;
+    width: 72px;
+    height: 61px;
+    background-image: url('../img/circle.svg');
+}
+
+/* solves icon */
+.solves-icon {
+    display: inline-block;
+    width: 80px;
+    height: 65px;
+    background-image: url('../img/solves.svg');
+}
+
+/* display icon */
+.display-icon {
+    display: inline-block;
+    width: 62px;
+    height: 62px;
+    background-image: url('../img/display.svg');
+}

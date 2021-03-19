@@ -1,0 +1,21 @@
+.why {
+    &-card {
+        background-color: #3763FF;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+        color: #fff;
+        padding: 28px 24px;
+        text-align: center;
+        height: 100%;
+
+        &--margin {
+            margin-right: 30px;
+            margin-left: 30px;
+        }
+
+        p {
+            margin-top: 36px;
+            font-weight: 500;
+            font-size: 18px;
+        }
+    }
+}
