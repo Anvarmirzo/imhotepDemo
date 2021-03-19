@@ -1,9 +1,11 @@
-.offer {
+.gallery {
     background-image: url('../img/offer-bg.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+}
 
+.offer {
     &-cards {
         position: relative;
 

@@ -128,20 +128,16 @@ document.addEventListener('DOMContentLoaded', function () {
   /* Gallery slider */
 
   var gallerySlider = new Swiper('.gallery-slider-container', {
-    loop: true,
-    speed: 700,
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false
-    },
+    slidesPerView: 3,
+    centeredSlides: true,
+    roundLengths: true,
+    loopAdditionalSlides: 30,
+    initialSlide: 1,
+    speed: 500,
     spaceBetween: 30,
     pagination: {
       el: '.swiper-pagination',
       clickable: true
-    },
-    navigation: {
-      nextEl: '.gallery-slider-container .swiper-button-next',
-      prevEl: '.gallery-slider-container .swiper-button-prev'
     }
   });
   /* Advantage slider */
