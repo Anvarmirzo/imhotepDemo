@@ -3,13 +3,6 @@
     padding-bottom: 50px;
     position: relative;
 
-    &-row {
-        @include block_991 {
-            flex-direction: column-reverse !important;
-            align-items: center;
-        }
-    }
-
     &-card {
         background-color: #3763FF;
         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
@@ -30,21 +23,6 @@
         p {
             font-weight: 500;
             font-size: 15px;
-        }
-    }
-
-    .title-block {
-        display: flex;
-        align-items: flex-end;
-        justify-content: flex-end;
-        height: 193px;
-
-        @include block_991 {
-            margin-bottom: 32px;
-        }
-
-        h4 {
-            max-width: 94px;
         }
     }
 }

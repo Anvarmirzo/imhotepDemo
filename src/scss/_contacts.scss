@@ -1,30 +1,7 @@
 .contacts {
-    padding-top: 552px;
-    padding-bottom: 81px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     position: relative;
-    background-image: url('../img/contacts-bg.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-
-    @include block_767 {
-        padding-bottom: 26px;
-        padding-top: 475px;
-    }
-
-    .hide-md {
-        @include block_767 {
-            display: none;
-        }
-    }
-
-    .title-block {
-        position: relative;
-        max-width: 180px;
-        height: 216px;
-        display: flex;
-        align-items: flex-end;
-    }
 
     &-negative-position {
         width: 100%;
@@ -56,9 +33,6 @@
                 left: -300px;
                 bottom: 69px;
 
-                @include block_1199 {
-                    bottom: 12px;
-                }
 
                 @include block_991 {
                     bottom: -312px;
@@ -70,10 +44,6 @@
             &.contact-manager {
                 left: -300px;
                 bottom: 269px;
-
-                @include block_1199 {
-                    bottom: 164px;
-                }
 
                 @include block_991 {
                     bottom: -155px;
@@ -106,11 +76,16 @@
 
     .map-wrapper {
         position: relative;
-        max-width: 631px;
-        max-height: 648px;
-        border-radius: 20px;
-        overflow: hidden;
+        width: 587px;
+        height: 466px;
+        filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
         z-index: 2;
+        margin-left: auto;
+
+        iframe {
+            position: relative;
+            z-index: 2;
+        }
 
         @include block_1199 {
             max-height: 529px;
@@ -197,14 +172,12 @@
             justify-content: center;
         }
     }
+}
 
-    .form-underline {
-        background: #C8C8C8;
-        height: 1px;
-        width: 90%;
-        text-align: center;
-        margin: 20px auto 16px;
-    }
-
-
+.form-underline {
+    background-color: #C8C8C8;
+    height: 1px;
+    width: 90%;
+    text-align: center;
+    margin: 49px auto 46px;
 }

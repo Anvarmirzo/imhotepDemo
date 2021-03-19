@@ -1209,11 +1209,12 @@ h3 {
 
 /* contact form button */
 
-.primary-btn.contact-form-btn::after {
-  background-image: url(../img/play-btn.svg);
-  background-repeat: no-repeat;
-  background-size: 16px;
-  background-position: 15px center;
+.primary-btn.contact-form-btn {
+  background-color: #FFFFFF;
+  border-radius: 30px;
+  font-weight: 800;
+  font-size: 18px;
+  color: #1C2A5C;
 }
 
 fieldset {
@@ -1429,8 +1430,6 @@ fieldset {
 }
 
 .first-layer {
-  padding-top: 50px;
-  padding-bottom: 50px;
   background-image: url("../img/contacts-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1438,8 +1437,6 @@ fieldset {
 }
 
 .second-layer {
-  padding-top: 50px;
-  padding-bottom: 50px;
   background-image: url(../img/offer-bg.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -1447,9 +1444,14 @@ fieldset {
 }
 
 .third-layer {
-  padding-top: 50px;
-  padding-bottom: 50px;
   background-image: url(../img/layer-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fourth-layer {
+  background-image: url(../img/contacts-layer.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1995,43 +1997,10 @@ fieldset {
   font-size: 15px;
 }
 
-.questions .title-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  height: 193px;
-}
-
-.questions .title-block h4 {
-  max-width: 94px;
-}
-
 .contacts {
-  padding-top: 552px;
-  padding-bottom: 81px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   position: relative;
-  background-image: url("../img/contacts-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-
-.contacts .title-block {
-  position: relative;
-  max-width: 180px;
-  height: 216px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
 }
 
 .contacts-negative-position {
@@ -2091,10 +2060,16 @@ fieldset {
 
 .contacts .map-wrapper {
   position: relative;
-  max-width: 631px;
-  max-height: 648px;
-  border-radius: 20px;
-  overflow: hidden;
+  width: 587px;
+  height: 466px;
+  -webkit-filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
+  z-index: 2;
+  margin-left: auto;
+}
+
+.contacts .map-wrapper iframe {
+  position: relative;
   z-index: 2;
 }
 
@@ -2194,12 +2169,12 @@ fieldset {
   justify-content: center;
 }
 
-.contacts .form-underline {
-  background: #C8C8C8;
+.form-underline {
+  background-color: #C8C8C8;
   height: 1px;
   width: 90%;
   text-align: center;
-  margin: 20px auto 16px;
+  margin: 49px auto 46px;
 }
 
 .footer {
@@ -3048,14 +3023,6 @@ fieldset {
     font-size: 14px;
   }
 
-  .contacts .map-info-card.contact-support {
-    bottom: 12px;
-  }
-
-  .contacts .map-info-card.contact-manager {
-    bottom: 164px;
-  }
-
   .contacts .map-wrapper {
     max-height: 529px;
   }
@@ -3110,20 +3077,6 @@ fieldset {
 
   .offer-bottom-card {
     padding: 23px 17px;
-  }
-
-  .questions-row {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: reverse !important;
-    -ms-flex-direction: column-reverse !important;
-    flex-direction: column-reverse !important;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-
-  .questions .title-block {
-    margin-bottom: 32px;
   }
 
   .contacts .map-info-card {
@@ -3222,15 +3175,6 @@ fieldset {
 
   .partners {
     padding-bottom: 184px;
-  }
-
-  .contacts {
-    padding-bottom: 26px;
-    padding-top: 475px;
-  }
-
-  .contacts .hide-md {
-    display: none;
   }
 
   .contacts .map-info-card {
@@ -3336,11 +3280,6 @@ fieldset {
     border: 0;
     background-position: center center;
     background-size: 7px;
-  }
-
-  .primary-btn.contact-form-btn::after {
-    background-size: 7px;
-    background-position: 10px center;
   }
 
   .number-form-wrapper label {

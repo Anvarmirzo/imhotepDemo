@@ -238,14 +238,10 @@
 }
 
 /* contact form button */
-.primary-btn.contact-form-btn::after {
-    background-image: url(../img/play-btn.svg);
-    background-repeat: no-repeat;
-    background-size: 16px;
-    background-position: 15px center;
-
-    @include block_480 {
-        background-size: 7px;
-        background-position: 10px center;
-    }
+.primary-btn.contact-form-btn {
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    font-weight: 800;
+    font-size: 18px;
+    color: #1C2A5C;
 }
