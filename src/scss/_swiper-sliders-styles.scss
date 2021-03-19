@@ -2,11 +2,7 @@
 .gallery-slider-parent {
     position: relative;
     overflow: hidden;
-    padding-bottom: 30px;
-
-    @media (max-width:1519px) {
-        padding-bottom: 0;
-    }
+    padding-bottom: 53px;
 
     @include block_480 {
         padding-bottom: 41px;
@@ -28,7 +24,6 @@
     height: 100%;
 
     .swiper-slide {
-        height: 300px;
         display: flex;
         align-items: center;
         justify-content: center;

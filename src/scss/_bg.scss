@@ -1,11 +1,15 @@
 .first-layer {
-    background-image: url('../img/about-bg.jpg');
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url('../img/contacts-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
 .second-layer {
+    padding-top: 50px;
+    padding-bottom: 50px;
     background-image: url(../img/offer-bg.jpg);
     background-position: center center;
     background-repeat: no-repeat;

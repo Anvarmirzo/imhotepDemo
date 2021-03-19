@@ -1413,13 +1413,17 @@ fieldset {
 }
 
 .first-layer {
-  background-image: url("../img/about-bg.jpg");
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-image: url("../img/contacts-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
 .second-layer {
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-image: url(../img/offer-bg.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -1546,6 +1550,11 @@ fieldset {
   font-size: 25px;
 }
 
+.about {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 .about-text-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1615,13 +1624,19 @@ fieldset {
 }
 
 .advantage {
-  padding-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .advantage .container > p {
   font-weight: 600;
   font-size: 25px;
   color: #343434;
+}
+
+.gallery {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .offer-cards {
@@ -2117,7 +2132,7 @@ fieldset {
 .gallery-slider-parent {
   position: relative;
   overflow: hidden;
-  padding-bottom: 30px;
+  padding-bottom: 53px;
 }
 
 .gallery-slider-parent .swiper-slide {
@@ -2138,7 +2153,6 @@ fieldset {
 }
 
 .gallery-slider-container .swiper-slide {
-  height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2777,12 +2791,6 @@ fieldset {
 
   .questions-card {
     max-width: 239px;
-  }
-}
-
-@media (max-width: 1519px) {
-  .gallery-slider-parent {
-    padding-bottom: 0;
   }
 }
 
