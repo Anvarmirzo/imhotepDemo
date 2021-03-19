@@ -1,46 +1,42 @@
 .header {
     position: relative;
-    background-image: url(../img/header-bg.jpg);
+    background-image: url(../img/header-layer_01.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    padding-bottom: 113px;
 
+    // background-attachment: fixed;
     * {
         z-index: 1;
     }
 
-    &-bg-cover {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(2, 24, 71, 0.8);
-        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(4px);
-        clip-path: polygon(100% 0, 0 0, 0 100%);
-    }
+    &-bg-cover {}
 
     &--flex {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        height: 100vh;
     }
 
     &-content {
-        flex-grow: 1;
+        margin-top: 290px;
         color: $header-color;
+
+        .primary-btn {
+            padding: 13px 31px;
+            font-weight: bold;
+            font-size: 18px;
+        }
 
         @include block_480 {
             text-align: center;
         }
 
         h2 {
-            margin-bottom: 40px;
-            font-size: 30px;
-            line-height: 36px;
+            margin-bottom: 30px;
+            font-weight: bold;
+            font-size: 50px;
+            max-width: 521px;
 
             @include block_480 {
                 font-size: 20px;
@@ -49,8 +45,8 @@
         }
 
         p {
-            max-width: 423px;
-            margin-bottom: 45px;
+            max-width: 569px;
+            margin-bottom: 70px;
             font-weight: 500;
             font-size: 25px;
 
@@ -59,19 +55,6 @@
             }
         }
 
-        &-btns {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            @include block_480 {
-                flex-direction: column;
-
-                .header-video-btn-wrapper {
-                    margin-top: 87px;
-                    padding: 9px;
-                }
-            }
-        }
+        &-btns {}
     }
 }

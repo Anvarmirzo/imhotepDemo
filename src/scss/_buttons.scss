@@ -1,32 +1,14 @@
 /* primary button */
 .primary-btn {
-    position: relative;
     font-weight: bold;
     font-size: 15px;
     color: $primary-btn-color;
-    padding: 13px 86px 13px 23px;
+    padding: 8px 37px;
     background-color: $primary-btn-bg;
-    box-shadow: 0px 0px 10px $primary-btn-shadow;
-    border-radius: 30px;
     border: 0;
-
-    &::after {
-        content: '';
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 40px;
-        height: 100%;
-        background-color: $primary-btn-icon;
-        background-image: url('../img/call-phone.svg');
-        background-repeat: no-repeat;
-        background-position: center center;
-        border-radius: 50%;
-
-        @include block_480 {
-            width: 25px;
-        }
-    }
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    text-align: center;
 
     &:hover {
         cursor: pointer;
@@ -42,27 +24,6 @@
 .primary-btn.dot-btn {
     padding-top: 16px;
     padding-bottom: 16px;
-
-    &::after {
-        content: '';
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 47px;
-        height: 100%;
-        background-color: #fff;
-        border: 18px solid $primary-btn-icon;
-        background-repeat: no-repeat;
-        background-position: center center;
-        border-radius: 50%;
-
-        @include block_480 {
-            width: 25px;
-            background-color: $primary-btn-icon;
-            background-image: url(../img/small-play-btn.svg);
-            border: 0;
-        }
-    }
 
     @include block_480 {
         padding: 8px 34px 8px 12px;
