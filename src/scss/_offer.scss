@@ -1,0 +1,120 @@
+.offer {
+    background-image: url('../img/offer-bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &-cards {
+        position: relative;
+
+        .offer-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        h4 {
+            font-weight: bold;
+            font-size: 23px;
+            text-align: center;
+            color: $offer-cards-h4;
+
+            @include block_1199 {
+                font-size: 18px;
+            }
+
+            @include block_991 {
+                font-size: 20px;
+            }
+        }
+
+        &-line {
+            position: absolute;
+            height: 143px;
+            width: 100%;
+            left: 0px;
+            top: 33%;
+            transform: translateY(-50%);
+            background: #D3D3D3;
+        }
+    }
+
+    &-bottom-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        min-height: 153px;
+        background-color: $offer-cards-bg;
+        border-radius: 20px;
+        padding: 15px 15px 30px;
+
+        @media(max-width: 1519.98px) {
+            min-height: 128px;
+        }
+
+        @include block_1199 {
+            min-height: 109px;
+        }
+
+        @include block_991 {
+            padding: 23px 17px;
+        }
+
+        h4 {
+            font-weight: 600;
+            font-size: 25px;
+            color: #fff;
+
+            @include block_1199 {
+                font-size: 18px;
+            }
+
+            @include block_480 {
+                font-size: 13px;
+            }
+        }
+    }
+
+    &-card {
+        background: #FFFFFF;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        padding: 15px 15px 30px;
+        height: 100%;
+
+        &-bg {
+            background-color: $offer-cards-bg;
+        }
+
+        &-img--border {
+            img {
+                border-radius: 20px;
+            }
+        }
+
+        &--white {
+            h4 {
+                font-weight: bold;
+                font-size: 18px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+
+                @include block_1199 {
+                    font-size: 14px;
+                }
+
+                @include block_480 {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    img {
+        @include block_575 {
+            width: 100%;
+        }
+    }
+}

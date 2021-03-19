@@ -1,0 +1,84 @@
+/* About section icons */
+.about-social {
+    a {
+        margin-right: 55px;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+
+    &-facebook {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        background-image: url('../img/facebook.svg');
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    &-twitter {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        background-image: url('../img/twitter.svg');
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    &-instagram {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        background-image: url('../img/instagram.svg');
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+}
+
+/* offer section icons */
+.offer-check-icon {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    background-image: url('../img/check.svg');
+}
+
+/* advantage section icons */
+.advantage-check-icon {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    background-image: url('../img/check-blue.svg');
+}
+
+/* question icon */
+.question-icon {
+    display: inline-block;
+    position: absolute;
+    right: 16px;
+    bottom: 15px;
+    background-image: url('../img/question-icon.svg');
+    width: 43px;
+    height: 39px;
+}
+
+/* phone icon */
+.phone-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url('../img/call-phone-blue.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* mail icon */
+.mail-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url('../img/mail-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}

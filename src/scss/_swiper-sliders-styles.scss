@@ -1,0 +1,81 @@
+/* gallery slider */
+.gallery-slider-parent {
+    margin-top: 121px;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 55px;
+
+    @include block_480 {
+        padding-bottom: 41px;
+    }
+
+    @include block_767 {
+        margin-top: 32px;
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.gallery-slider-container {
+    width: 100%;
+    height: 100%;
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        transform: translateY(-50%);
+
+        @include block_991 {
+            display: none;
+        }
+    }
+
+    img {
+        border-radius: 30px;
+    }
+}
+
+/* advantage slider */
+.advantage {
+    padding-bottom: 6px;
+
+    &-slider-container {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        margin-top: 60px;
+
+        @include block_767 {
+            margin-top: 34px;
+        }
+
+    }
+
+    &-card {
+        background: #3763FF;
+        border-radius: 20px;
+        padding: 22px 21px;
+        color: #fff;
+        text-align: center;
+        height: 100%;
+
+        p {
+            font-size: 18px;
+        }
+    }
+}
+
+/* questions slider */
+.questions-slider-container {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+    }
+}

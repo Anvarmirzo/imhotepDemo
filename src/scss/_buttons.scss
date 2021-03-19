@@ -1,0 +1,302 @@
+/* primary button */
+.primary-btn {
+    position: relative;
+    font-weight: bold;
+    font-size: 15px;
+    color: $primary-btn-color;
+    padding: 13px 86px 13px 23px;
+    background-color: $primary-btn-bg;
+    box-shadow: 0px 0px 10px $primary-btn-shadow;
+    border-radius: 30px;
+    border: 0;
+
+    &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 40px;
+        height: 100%;
+        background-color: $primary-btn-icon;
+        background-image: url('../img/call-phone.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        border-radius: 50%;
+
+        @include block_480 {
+            width: 25px;
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    @include block_480 {
+        font-size: 8px;
+        padding: 8px 66px 8px 12px;
+    }
+}
+
+/* dot button */
+.primary-btn.dot-btn {
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 47px;
+        height: 100%;
+        background-color: #fff;
+        border: 18px solid $primary-btn-icon;
+        background-repeat: no-repeat;
+        background-position: center center;
+        border-radius: 50%;
+
+        @include block_480 {
+            width: 25px;
+            background-color: $primary-btn-icon;
+            background-image: url(../img/small-play-btn.svg);
+            border: 0;
+        }
+    }
+
+    @include block_480 {
+        padding: 8px 34px 8px 12px;
+    }
+}
+
+/* play button */
+.header-video {
+    &-btn {
+        background-image: url(../img/play-btn.svg);
+        width: 69px;
+        height: 69px;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-position: 26px center;
+        background-color: $play-btn-bg;
+        border: 0;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &-wrapper {
+            border: 3px solid #FFFFFF;
+            border-radius: 50%;
+            padding: 18px;
+        }
+    }
+}
+
+/* dropdown burger */
+.burger-icon {
+    position: relative;
+    border: none;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-color: transparent;
+
+    @media(min-width:1199.98px) {
+        display: none;
+    }
+
+    @include block_1199 {
+        position: absolute;
+        top: 20px;
+        right: 25px;
+    }
+
+    .hamburger {
+        position: absolute;
+        top: 47%;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: #FCFCFC;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+        transition: 0.5s;
+
+        &:before {
+            top: -10px;
+        }
+
+        &:after {
+            top: 10px;
+        }
+
+        &-three:before,
+        &-three:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: #FCFCFC;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: 0.5s;
+        }
+    }
+
+    &.active-three .hamburger-three {
+        background: rgba(0, 0, 0, 0);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+    }
+
+    &.active-three .hamburger-three:before {
+        top: 0;
+        transform: rotate(135deg);
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        background: #1C2A5C;
+    }
+
+    &.active-three .hamburger-three:after {
+        top: 0;
+        transform: rotate(225deg);
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        background: #1C2A5C;
+    }
+}
+
+/* dropdown primary button */
+.nav-dropdown {
+    .primary-btn {
+        @include block_1199 {
+            background-color: #3763FF;
+            color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 23px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 40px;
+                height: 100%;
+                background-color: #fff;
+                background-image: url('../img/call-phone-blue.svg');
+                background-repeat: no-repeat;
+                background-position: center center;
+                border-radius: 50%;
+            }
+        }
+
+        @include block_480 {
+            padding: 8px 66px 8px 12px;
+
+            &::after {
+                width: 25px;
+            }
+        }
+    }
+}
+
+/* header content button */
+.header-content-btns {
+    .primary-btn {
+        @include block_575 {
+            margin-left: 15px;
+        }
+    }
+}
+
+/* pop-up number form button */
+.number-form-btn-wrappper {
+    display: inline-block;
+    position: relative;
+
+    .primary-btn.dot-btn {
+        background-color: transparent;
+        z-index: 1;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 0;
+        width: 47px;
+        height: 100%;
+        background-color: $primary-btn-icon;
+        background-image: url(../img/play-btn.svg);
+        background-repeat: no-repeat;
+        background-position: 19px center;
+        border-radius: 50%;
+        background-size: 12px;
+
+        @include block_480 {
+            width: 25px;
+            border: 0;
+            background-position: center center;
+            background-size: 7px;
+        }
+
+
+    }
+}
+
+/* pop-up thanks form button */
+.form-thanks-wrapper {
+    .primary-btn.dot-btn {
+        &::after {
+            border: 0;
+            background-color: $play-btn-bg;
+            background-image: url(../img/square.svg);
+        }
+    }
+}
+
+.close-form {
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    border: none;
+    background-color: transparent;
+
+    @include block_767 {
+        width: 18px;
+        height: 18px;
+    }
+
+    &:before,
+    &:after {
+        top: 0;
+        position: absolute;
+        left: 19px;
+        content: ' ';
+        height: 100%;
+        width: 3px;
+        background: #1C2A5C;
+    }
+
+    &:before {
+        transform: rotate(45deg);
+    }
+
+    &:after {
+        transform: rotate(-45deg);
+    }
+}
+
+/* contact form button */
+.primary-btn.contact-form-btn::after {
+    background-image: url(../img/play-btn.svg);
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: 15px center;
+
+    @include block_480 {
+        background-size: 7px;
+        background-position: 10px center;
+    }
+}

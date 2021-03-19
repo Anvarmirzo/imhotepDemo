@@ -1,0 +1,56 @@
+.questions {
+    position: relative;
+
+    &-row {
+        @include block_991 {
+            flex-direction: column-reverse !important;
+            align-items: center;
+        }
+    }
+
+    &-card {
+        background: #FFFFFF;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        padding: 37px 30px 57px;
+        height: 100%;
+        max-width: 280px;
+        position: relative;
+
+        @media (max-width:1519.98px) {
+            max-width: 239px;
+        }
+
+        @include block_1199 {
+            max-width: 280px;
+        }
+
+
+        h4 {
+            font-weight: bold;
+            font-size: 20px;
+            color: #3E3D3D;
+            margin-bottom: 28px;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 15px;
+        }
+    }
+
+    .title-block {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        height: 193px;
+
+        @include block_991 {
+            margin-bottom: 32px;
+        }
+
+        h4 {
+            max-width: 94px;
+        }
+    }
+}

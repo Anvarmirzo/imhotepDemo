@@ -1,0 +1,210 @@
+.contacts {
+    padding-top: 552px;
+    padding-bottom: 81px;
+    position: relative;
+    background-image: url('../img/contacts-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    @include block_767 {
+        padding-bottom: 26px;
+        padding-top: 475px;
+    }
+
+    .hide-md {
+        @include block_767 {
+            display: none;
+        }
+    }
+
+    .title-block {
+        position: relative;
+        max-width: 180px;
+        height: 216px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &-negative-position {
+        width: 100%;
+        position: absolute;
+        top: -166px;
+    }
+
+    .map-info {
+        position: relative;
+
+        &-card {
+            position: absolute;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+            border-radius: 20px;
+            width: 344px;
+            padding: 23px 49px 23px 26px;
+            z-index: 1;
+
+            @include block_991 {
+                padding: 23px 26px;
+            }
+
+            @include block_767 {
+                width: 100%;
+            }
+
+            &.contact-support {
+                left: -300px;
+                bottom: 69px;
+
+                @include block_1199 {
+                    bottom: 12px;
+                }
+
+                @include block_991 {
+                    bottom: -312px;
+                    right: 0;
+                    left: auto;
+                }
+            }
+
+            &.contact-manager {
+                left: -300px;
+                bottom: 269px;
+
+                @include block_1199 {
+                    bottom: 164px;
+                }
+
+                @include block_991 {
+                    bottom: -155px;
+                    right: 0;
+                    left: auto;
+                }
+            }
+
+            h5 {
+                font-weight: 800;
+                font-size: 18px;
+                color: #3E3D3D;
+                margin-bottom: 17px;
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                font-weight: 800;
+                font-size: 14px;
+                color: #747474;
+                margin-bottom: 12px;
+
+                span {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+
+    .map-wrapper {
+        position: relative;
+        max-width: 631px;
+        max-height: 648px;
+        border-radius: 20px;
+        overflow: hidden;
+        z-index: 2;
+
+        @include block_1199 {
+            max-height: 529px;
+        }
+
+        @include block_991 {
+            max-height: 390px;
+        }
+
+        @include block_767 {
+            max-height: 298px;
+        }
+    }
+
+    &-form {
+        &--column {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        &-wrapper {
+            background-color: #1C2A5C;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+            border-radius: 20px;
+            padding: 36px 75px 29px;
+            color: #FFFFFF;
+            text-align: center;
+
+            @include block_575 {
+                padding: 24px 18px;
+            }
+
+
+            h4 {
+                margin-bottom: 19px;
+                margin-top: 32px;
+            }
+
+            h4,
+            p {
+                font-weight: bold;
+                font-size: 20px;
+
+                @include block_575 {
+                    font-size: 13px;
+                }
+            }
+
+            &>h4 {
+                text-transform: uppercase;
+                margin-bottom: 19px;
+                margin-top: 0;
+            }
+
+            .contacts-form--column {
+                input::placeholder {
+                    color: #C4C4C4;
+                    font-size: 15px;
+                    font-style: italic;
+                    text-align: center;
+
+                    @include block_575 {
+                        font-size: 10px;
+                    }
+                }
+
+                input[type="radio"] {
+                    margin-bottom: 20px;
+                }
+
+                input:not([type="radio"]) {
+                    padding: 9px;
+                    border: 2px solid #FFFFFF;
+                    border-radius: 10px;
+                    background-color: #1C2A5C;
+                    color: #C4C4C4;
+                }
+            }
+        }
+
+        &--flex {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .form-underline {
+        background: #C8C8C8;
+        height: 1px;
+        width: 90%;
+        text-align: center;
+        margin: 20px auto 16px;
+    }
+
+
+}

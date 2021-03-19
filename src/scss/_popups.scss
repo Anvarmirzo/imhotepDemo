@@ -1,0 +1,123 @@
+fieldset {
+    border: 0;
+    padding: 0;
+}
+
+/* Phone form */
+.number-form {
+    &-wrapper {
+        position: fixed;
+        width: 653px;
+        background: #FFFDFD;
+        border-radius: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        padding: 8px 26px 34px 26px;
+        text-align: center;
+        opacity: 0;
+        visibility: hidden;
+
+        @include block_767 {
+            width: 275px;
+        }
+
+        label {
+            display: inline-block;
+            font-weight: bold;
+            font-size: 20px;
+            color: $number-form-label;
+            margin-bottom: 19px;
+
+            @include block_767 {
+                font-size: 15px
+            }
+
+            @include block_480 {
+                font-size: 13px
+            }
+        }
+
+        input:not([type="submit"]) {
+            border: 2px solid #1C2A5C;
+            border-radius: 10px;
+            width: 289px;
+            padding: 9px;
+            text-align: center;
+            font-size: 15px;
+            padding-bottom: 14px;
+            margin-bottom: 14px;
+
+            @include block_767 {
+                width: 95%;
+                font-size: 12px;
+            }
+
+            @include block_480 {
+                font-size: 10px;
+            }
+
+            &:last-of-type {
+                margin-bottom: 37px;
+            }
+
+            &::placeholder {
+                color: #C4C4C4;
+            }
+        }
+    }
+
+    &-subtitle {
+        max-width: 409px;
+        font-size: 25px;
+        color: $number-form-subtitle;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include block_767 {
+            font-size: 18px;
+        }
+
+        @include block_480 {
+            font-size: 13px;
+        }
+    }
+}
+
+.show-number-form {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* Done thanks form */
+.form-thanks {
+    font-weight: bold;
+    font-size: 35px;
+    color: $form-thanks-color;
+
+    @include block_480 {
+        font-size: 15px !important;
+    }
+
+    &-wrapper {
+        p {
+            font-size: 30px;
+            color: #555555;
+            margin-bottom: 13px !important;
+
+            @include block_480 {
+                font-size: 13px;
+            }
+        }
+
+        .primary-btn.dot-btn {
+            margin-top: 55px;
+
+            @include block_767 {
+                margin-top: 15px;
+            }
+        }
+    }
+}

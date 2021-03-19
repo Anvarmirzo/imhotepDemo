@@ -1,0 +1,95 @@
+.installment {
+    background-image: url('../img/installment-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    padding-top: 232px;
+    padding-bottom: 95px;
+
+    @include block_575 {
+        padding-bottom: 70px;
+    }
+
+    &-year {
+        width: 48%;
+        position: absolute;
+        top: 232px;
+        background-color: #3763FF;
+        border-radius: 0 35px 35px 0px;
+        padding: 32px 55px;
+
+        @include block_991 {
+            top: 30px;
+        }
+
+        @include block_575 {
+            width: 97%;
+        }
+
+        p {
+            text-align: right;
+            font-weight: 800;
+            font-size: 40px;
+            color: #FFFFFF;
+
+            span {
+                line-height: 1;
+                font-weight: bold;
+                font-size: 300px;
+
+                @include block_991 {
+                    font-size: 120px;
+                }
+            }
+        }
+    }
+
+    &-card {
+        background: #FFFFFF;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+        padding: 29px 37px;
+        margin-bottom: 195px;
+
+        @include block_991 {
+            margin-top: 8px;
+            margin-bottom: 70px;
+        }
+
+        @include block_480 {
+            padding: 28px 13px;
+        }
+
+        h3 {
+            margin-bottom: 43px;
+        }
+
+        p {
+            margin-bottom: 28px;
+        }
+    }
+
+    &-contact {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            font-weight: bold;
+            font-size: 25px;
+            line-height: 30px;
+            color: #1C2A5C;
+
+            @include block_480 {
+                font-size: 18px;
+            }
+        }
+
+        .primary-btn.call-btn {
+            &::after {
+                background-size: 11px;
+            }
+        }
+    }
+}

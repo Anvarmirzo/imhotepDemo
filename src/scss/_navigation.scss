@@ -1,0 +1,117 @@
+/* Header Navigation */
+.header {
+    &-nav {
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+
+        a[href^="tel:"] {
+            font-weight: bold;
+            font-size: 20px;
+            color: $header-number;
+
+            @include block_480 {
+                font-size: 18px;
+            }
+        }
+
+        &--flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        &-contacts {
+            @include block_1199 {
+                position: relative;
+            }
+
+            &::before {
+                @include block_1199 {
+                    content: '';
+                    position: absolute;
+                    top: -10px;
+                    left: 50%;
+                    width: 90%;
+                    height: 1px;
+                    transform: translateX(-50%);
+                    background-color: #1C2A5C;
+                }
+            }
+        }
+
+        &-links {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            @include block_1199 {
+                display: none;
+                position: fixed;
+                top: 0;
+                right: 0;
+                width: 50%;
+                height: 100%;
+                border-radius: 10px 0px 0px 10px;
+                padding-top: 50px;
+                z-index: 3;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                background-color: #fff;
+            }
+
+            @include block_767 {
+                width: 70%;
+            }
+
+            &.d-flex {
+                display: flex;
+            }
+
+            &::before {
+                @include block_1199 {
+                    content: '';
+                    position: absolute;
+                    top: 65px;
+                    left: 50%;
+                    width: 90%;
+                    height: 1px;
+                    transform: translateX(-50%);
+                    background-color: #1C2A5C;
+                }
+            }
+        }
+    }
+}
+
+.nav-dropdown {
+    @include block_1199 {
+        flex-direction: column;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    li {
+        margin: 0 10px;
+
+        @include block_1199 {
+            margin: 7px 0;
+        }
+
+        a {
+            font-weight: 500;
+            font-size: 15px;
+            color: $nav-links-color;
+
+            @include block_1199 {
+                color: #1C2A5C !important;
+            }
+        }
+    }
+}
