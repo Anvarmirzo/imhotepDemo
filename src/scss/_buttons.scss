@@ -20,6 +20,18 @@
     }
 }
 
+.secondary-btn {
+    background-color: #3763FF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    padding: 15px 24px;
+    font-weight: 800;
+    font-size: 15px;
+    color: #FFFFFF;
+    border: 0;
+    width: max-content;
+}
+
 /* dot button */
 .primary-btn.dot-btn {
     padding-top: 16px;
@@ -27,30 +39,6 @@
 
     @include block_480 {
         padding: 8px 34px 8px 12px;
-    }
-}
-
-/* play button */
-.header-video {
-    &-btn {
-        background-image: url(../img/play-btn.svg);
-        width: 69px;
-        height: 69px;
-        border-radius: 50%;
-        background-repeat: no-repeat;
-        background-position: 26px center;
-        background-color: $play-btn-bg;
-        border: 0;
-
-        &:hover {
-            cursor: pointer;
-        }
-
-        &-wrapper {
-            border: 3px solid #FFFFFF;
-            border-radius: 50%;
-            padding: 18px;
-        }
     }
 }
 

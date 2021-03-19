@@ -1037,34 +1037,26 @@ h3 {
   cursor: pointer;
 }
 
+.secondary-btn {
+  background-color: #3763FF;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  padding: 15px 24px;
+  font-weight: 800;
+  font-size: 15px;
+  color: #FFFFFF;
+  border: 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
 /* dot button */
 
 .primary-btn.dot-btn {
   padding-top: 16px;
   padding-bottom: 16px;
-}
-
-/* play button */
-
-.header-video-btn {
-  background-image: url(../img/play-btn.svg);
-  width: 69px;
-  height: 69px;
-  border-radius: 50%;
-  background-repeat: no-repeat;
-  background-position: 26px center;
-  background-color: #3763FF;
-  border: 0;
-}
-
-.header-video-btn:hover {
-  cursor: pointer;
-}
-
-.header-video-btn-wrapper {
-  border: 3px solid #FFFFFF;
-  border-radius: 50%;
-  padding: 18px;
 }
 
 /* dropdown burger */
@@ -1733,22 +1725,43 @@ fieldset {
 
 .installment-year {
   background-color: #3763FF;
-  padding: 32px 55px;
+  padding: 10px 28px 40px 38px;
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.35);
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.35);
-}
-
-.installment-year p {
-  text-align: right;
-  font-weight: 800;
-  font-size: 40px;
   color: #FFFFFF;
 }
 
-.installment-year p span {
-  line-height: 1;
+.installment-year-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.installment-year-title h3 {
+  color: #fff;
+}
+
+.installment-year-title p {
+  font-weight: 800;
+  font-size: 40px;
+}
+
+.installment-year-title span {
   font-weight: bold;
-  font-size: 300px;
+  font-size: 150px;
+  line-height: 1;
+}
+
+.installment-year-desc {
+  margin-top: 25px;
+  font-weight: 600;
+  font-size: 25px;
 }
 
 .installment-form {
@@ -1828,6 +1841,10 @@ fieldset {
   font-size: 15px;
   color: #C4C4C4;
   text-align: center;
+}
+
+.installment-form .secondary-btn {
+  margin: 21px auto 0;
 }
 
 .installment-contact {
@@ -3042,14 +3059,6 @@ fieldset {
     padding: 23px 17px;
   }
 
-  .installment-year {
-    top: 30px;
-  }
-
-  .installment-year p span {
-    font-size: 120px;
-  }
-
   .questions-row {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: reverse !important;
@@ -3211,10 +3220,6 @@ fieldset {
 
   .installment {
     padding-bottom: 70px;
-  }
-
-  .installment-year {
-    width: 97%;
   }
 
   .partners {
