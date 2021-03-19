@@ -16,7 +16,7 @@
 
 <body>
     <!-- header navigation -->
-    <nav class="header-nav">
+    <nav id="nav" class="header-nav">
         <div class="container">
             <div class="row header-nav--flex px-sm-15">
                 <div class="logo-wrapper">
@@ -24,14 +24,14 @@
                 </div>
                 <div class="header-nav-links">
                     <ul class="nav-dropdown header-nav--flex">
-                        <li><a href="##">О нас</a></li>
-                        <li><a href="##">Преимущества</a></li>
-                        <li><a href="##">Почему мы</a></li>
-                        <li><a href="##">Вопросы</a></li>
-                        <li><a href="##">Контакты</a></li>
+                        <li><a class="scroll-link" href="#about">О нас</a></li>
+                        <li><a class="scroll-link" href="#advantage">Преимущества</a></li>
+                        <li><a class="scroll-link" href="#why">Почему мы</a></li>
+                        <li><a class="scroll-link" href="#questions">Вопросы</a></li>
+                        <li><a class="scroll-link" href="#contacts">Контакты</a></li>
                         <li><a class="header-nav-links__number" href="tel:+998915595200"><span
                                     class="call-dark-icon"></span>+91 559 52 00</a></li>
-                        <li class="lang-switcher ru"><a href=""><img src="img/RUS.svg" alt="ru"></a></li>
+                        <li class="lang-switcher ru"><a href="index-uz.html"><img src="img/RUS.svg" alt="ru"></a></li>
                         <!-- <li class="lang-switcher uz"><a href=""><img src="img/uz.svg" alt="ru"></a></li> -->
                     </ul>
                     <ul class="header-nav-contacts header-nav--flex">
@@ -75,8 +75,8 @@
                 <p><input type="text" id="user-name" name="user-name" placeholder="Впишите свой вариант"></p>
                 <p><label for="user-number">Номер телефона</label></p>
                 <p><input type="tel" id="user-number" name="user-number" placeholder="Впишите свой вариант"></p>
-                <p class="number-form-btn-wrappper"><input class="primary-btn dot-btn" id="submit-number-form"
-                        type="submit" value="Отправить">
+                <p class="number-form-btn-wrappper"><input class="secondary-btn" id="submit-number-form" type="submit"
+                        value="Отправить">
                 </p>
             </fieldset>
         </form>
@@ -95,7 +95,7 @@
 
     <div class="first-layer">
         <!-- section about -->
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
                 <h3 data-aos="fade-right">О нас</h3>
                 <div class="row">
@@ -122,7 +122,7 @@
             </div>
         </section>
         <!-- section advantage -->
-        <section class="advantage">
+        <section class="advantage" id="advantage">
             <div class="container">
                 <h3 data-aos="fade-right">Наши преимущества</h3>
                 <p data-aos="fade-right">Магазины под ключ, которые соответствуют государственным стандартам, в торговом
@@ -237,7 +237,7 @@
     </div>
     <div class="third-layer">
         <!-- section why -->
-        <section class="why">
+        <section class="why" id="why">
             <div class="container">
                 <h3 data-aos="fade-right">Почему мы</h3>
                 <div class="row justify-content-center">
@@ -267,17 +267,17 @@
             <div class="container">
                 <h3 data-aos="fade-right">Наши партнеры</h3>
                 <div class="row partners-md-flex">
-                    <div data-aos="flip-down" data-aos-duration="600" class="col-lg-4 col-10 mb-md-20">
+                    <div data-aos="zoom-in" data-aos-duration="600" class="col-lg-4 col-10 mb-md-20">
                         <div class="partners-card">
                             <img src="img/gtg.png" alt="GTG Company">
                         </div>
                     </div>
-                    <div data-aos="flip-down" data-aos-duration="700" class="col-lg-4 col-10 mb-md-20">
+                    <div data-aos="zoom-in" data-aos-duration="700" class="col-lg-4 col-10 mb-md-20">
                         <div class="partners-card">
                             <img src="img/vibro.png" alt="Vibro Press">
                         </div>
                     </div>
-                    <div data-aos="flip-down" data-aos-duration="800" class="col-lg-4 col-10 mb-md-20">
+                    <div data-aos="zoom-in" data-aos-duration="800" class="col-lg-4 col-10 mb-md-20">
                         <div class="partners-card">
                             <img src="img/fixer.png" alt="Fixer Grand Filler">
                         </div>
@@ -288,7 +288,7 @@
     </div>
     <div class="fourth-layer">
         <!-- section questions -->
-        <section class="questions">
+        <section class="questions" id="questions">
             <div class="container">
                 <h3 data-aos="fade-right">Часто задаваемые вопросы</h3>
                 <!-- questions slider -->
@@ -322,7 +322,7 @@
             </div>
         </section>
         <!-- section contacts -->
-        <section class="contacts">
+        <section class="contacts" id="contacts">
             <div class="container">
                 <h3 data-aos="fade-right">Наши контакты</h3>
                 <div class="map-info">
@@ -335,11 +335,9 @@
                                         class="mail-icon"></span>mymail@gmail.com</a></p>
                         </div>
                         <div data-aos="fade-left" data-aos-duration="800" class="map-info-card contact-support">
-                            <h5>Поддержка</h5>
-                            <p><a href="tel:+79999999999"><span class="phone-icon"></span>+7 999 999 99 99</a>
-                            </p>
-                            <p><a class="m-0" href="mailto:mymail@gmail.com"><span
-                                        class="mail-icon"></span>mymail@gmail.com</a></p>
+                            <h5> Наш адрес </h5>
+                            <p><a href="#"><span class="location-icon"></span>Узбекистан г. Самарканд ул. Саттепо,
+                                    148B</a></p>
                         </div>
                         <iframe
                             src="https://yandex.ru/map-widget/v1/?um=constructor%3A96e9b7b2ae242cdf3021186ae9319d3700563bccf47af1732b4badf30e86796a&amp;source=constructor"
@@ -409,7 +407,7 @@
         <div class="container">
             <div class="row footer--flex">
                 <div class="logo-wrapper">
-                    <a href="##"><img src="img/logo.png" alt="Imhotep Stroy"></a>
+                    <a href="#nav"><img src="img/logo.png" alt="Imhotep Stroy"></a>
                 </div>
                 <nav class="footer-nav">
                     <div class="about-social">
@@ -418,18 +416,16 @@
                         <a class="about-social-instagram" href="##"></a>
                     </div>
                     <ul class="footer-menu">
-                        <li><a href="##">Главная</a></li>
-                        <li><a href="##">О нас</a></li>
-                        <li><a href="##">Схема здания</a></li>
-                        <li><a href="##">Преимущества</a></li>
-                        <li><a href="##">Вопросы ответы</a></li>
-                        <li><a href="##">Контакты</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#advantage">Преимущества</a></li>
+                        <li><a href="#why">Почему мы</a></li>
+                        <li><a href="#questions">Вопросы</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </footer>
-
     <!-- Swiper library JS -->
     <script src="plugins/swiper-bundle.min.js"></script>
     <!-- AOS library JS -->

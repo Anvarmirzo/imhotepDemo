@@ -6,4 +6,5 @@ document.addEventListener('DOMContentLoaded', function () {
     @@include('swiper-sliders-config.js')
     @@include('same-hieght.js')
     @@include('aos-config.js')
+    @@include('scroll.js')
 }, false);

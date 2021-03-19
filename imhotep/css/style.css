@@ -1157,22 +1157,6 @@ h3 {
   z-index: 1;
 }
 
-.number-form-btn-wrappper::after {
-  content: '';
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 0;
-  width: 47px;
-  height: 100%;
-  background-color: #3763FF;
-  background-image: url(../img/play-btn.svg);
-  background-repeat: no-repeat;
-  background-position: 19px center;
-  border-radius: 50%;
-  background-size: 12px;
-}
-
 /* pop-up thanks form button */
 
 .form-thanks-wrapper .primary-btn.dot-btn::after {
@@ -1369,6 +1353,17 @@ fieldset {
   background-image: url("../img/check.svg");
 }
 
+/* location icon */
+
+.location-icon {
+  display: inline-block;
+  width: 23px;
+  height: 21px;
+  background-image: url("../img/location.svg");
+  background-repeat: no-repeat;
+  background-position: center1;
+}
+
 /* advantage section icons */
 
 .advantage-check-icon {
@@ -1563,6 +1558,7 @@ fieldset {
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 113px;
+  background-position: center center;
 }
 
 .header * {
@@ -2341,6 +2337,7 @@ fieldset {
   -ms-flex-pack: center;
   justify-content: center;
   padding: 20px;
+  overflow: hidden;
 }
 
 .advantage-card {
@@ -2972,7 +2969,14 @@ fieldset {
   }
 
   .header-nav-contacts {
+    width: 100%;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .header-nav-contacts::before {
@@ -3031,6 +3035,9 @@ fieldset {
     flex-direction: column;
     margin-top: 20px;
     width: 100%;
+    min-width: 100%;
+    -webkit-box-shadow: none;
+    box-shadow: none;
   }
 
   .nav-dropdown li {
@@ -3307,13 +3314,6 @@ fieldset {
 
   .nav-dropdown .primary-btn::after {
     width: 25px;
-  }
-
-  .number-form-btn-wrappper::after {
-    width: 25px;
-    border: 0;
-    background-position: center center;
-    background-size: 7px;
   }
 
   .number-form-wrapper label {

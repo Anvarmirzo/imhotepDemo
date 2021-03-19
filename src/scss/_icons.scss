@@ -45,6 +45,16 @@
     background-image: url('../img/check.svg');
 }
 
+/* location icon */
+.location-icon {
+    display: inline-block;
+    width: 23px;
+    height: 21px;
+    background-image: url('../img/location.svg');
+    background-repeat: no-repeat;
+    background-position: center1;
+}
+
 /* advantage section icons */
 .advantage-check-icon {
     display: inline-block;

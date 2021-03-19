@@ -171,31 +171,6 @@
         background-color: transparent;
         z-index: 1;
     }
-
-    &::after {
-        content: '';
-        position: absolute;
-        right: 0;
-        top: 0;
-        z-index: 0;
-        width: 47px;
-        height: 100%;
-        background-color: $primary-btn-icon;
-        background-image: url(../img/play-btn.svg);
-        background-repeat: no-repeat;
-        background-position: 19px center;
-        border-radius: 50%;
-        background-size: 12px;
-
-        @include block_480 {
-            width: 25px;
-            border: 0;
-            background-position: center center;
-            background-size: 7px;
-        }
-
-
-    }
 }
 
 /* pop-up thanks form button */

@@ -17,7 +17,10 @@
 
         &-contacts {
             @include block_1199 {
+                width: 100%;
                 position: relative;
+                display: flex;
+                justify-content: center;
             }
 
             &::before {
@@ -95,6 +98,8 @@
         flex-direction: column;
         margin-top: 20px;
         width: 100%;
+        min-width: 100%;
+        box-shadow: none;
     }
 
     li {

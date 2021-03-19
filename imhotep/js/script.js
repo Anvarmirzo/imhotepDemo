@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', function () {
     breakpoints: {
       // when window width is >= 320px
       320: {
-        slidesPerView: 1.25,
+        slidesPerView: 1,
         spaceBetween: 21,
         loop: true,
         autoplay: {
@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', function () {
       },
       // when window width is >= 768px
       768: {
-        slidesPerView: 2.25,
+        slidesPerView: 1,
         spaceBetween: 40,
         loop: true,
         autoplay: {
@@ -168,7 +168,7 @@ document.addEventListener('DOMContentLoaded', function () {
       },
       // when window width is >= 992px
       992: {
-        slidesPerView: 3,
+        slidesPerView: 2,
         spaceBetween: 20,
         loop: true,
         autoplay: {
@@ -223,9 +223,9 @@ document.addEventListener('DOMContentLoaded', function () {
     var els = document.querySelectorAll(getSelector),
         arr = [];
 
-    for (var i = 0; i < els.length; i++) {
+    for (var _i = 0; _i < els.length; _i++) {
       arr.push({
-        height: els[i].clientHeight
+        height: els[_i].clientHeight
       });
     }
 
@@ -233,8 +233,8 @@ document.addEventListener('DOMContentLoaded', function () {
       return o.height;
     })));
 
-    for (var _i = 0; _i < els.length; _i++) {
-      els[_i].style.height = elsMaxHeight + 'px';
+    for (var _i2 = 0; _i2 < els.length; _i2++) {
+      els[_i2].style.height = elsMaxHeight + 'px';
     }
   }
   /* Use this function to apply same height for your elements for this you should write their selector on parameter setMaxHeight() */
@@ -250,4 +250,36 @@ document.addEventListener('DOMContentLoaded', function () {
     delay: 100,
     once: true
   });
+  var linkNav = document.querySelectorAll('[href^="#"]'),
+      //выбираем все ссылки к якорю на странице
+  V = 0.2; // скорость, может иметь дробное значение через точку (чем меньше значение - тем больше скорость)
+
+  for (var i = 0; i < linkNav.length; i++) {
+    linkNav[i].addEventListener('click', function (e) {
+      //по клику на ссылку
+      e.preventDefault(); //отменяем стандартное поведение
+
+      var w = window.pageYOffset,
+          // производим прокрутка прокрутка
+      hash = this.href.replace(/[^#]*(.*)/, '$1'); // к id элемента, к которому нужно перейти
+
+      var t = document.querySelector(hash).getBoundingClientRect().top,
+          // отступ от окна браузера до id
+      start = null;
+      requestAnimationFrame(step); // подробнее про функцию анимации [developer.mozilla.org]
+
+      function step(time) {
+        if (start === null) start = time;
+        var progress = time - start,
+            r = t < 0 ? Math.max(w - progress / V, w + t) : Math.min(w + progress / V, w + t);
+        window.scrollTo(0, r);
+
+        if (r != w + t) {
+          requestAnimationFrame(step);
+        } else {
+          location.hash = hash; // URL с хэшем
+        }
+      }
+    }, false);
+  }
 }, false);
