@@ -9,9 +9,10 @@
     }
 
     &-text-wrapper {
-        background: #FFFFFF;
-        border-radius: 20px;
-        padding: 42px 33px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+        padding: 50px 39px 33px 50px;
+        height: 100%;
 
         p {
             font-weight: 600;
@@ -21,6 +22,14 @@
             @include block_480 {
                 font-size: 13px;
             }
+        }
+
+        h4 {
+            font-weight: bold;
+            font-size: 20px;
+            color: #1C2A5C;
+            margin-top: 22px;
+            margin-bottom: 27px;
         }
     }
 
@@ -32,13 +41,25 @@
     }
 
     &-content-images {
-        @include block_991 {
-            text-align: center;
-        }
+        position: relative;
+        text-align: right;
 
         img {
-            border-radius: 20px;
-            margin-bottom: 20px;
+            z-index: 0;
+            opacity: 0.5;
+        }
+
+        .about-content-absolute {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 15px;
+            z-index: 1;
+            opacity: 1;
+        }
+
+        @include block_991 {
+            text-align: center;
         }
     }
 
