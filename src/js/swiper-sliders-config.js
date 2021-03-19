@@ -61,7 +61,7 @@ const gallerySlider = new Swiper('.gallery-slider-container', {
 
 /* Advantage slider */
 const advantageSlider = new Swiper('.advantage-slider-container', {
-    slidesPerView: 5,
+    slidesPerView: 3,
     spaceBetween: 21,
     breakpoints: {
         // when window width is >= 320px
@@ -87,7 +87,7 @@ const advantageSlider = new Swiper('.advantage-slider-container', {
         },
         // when window width is >= 992px
         992: {
-            slidesPerView: 4.25,
+            slidesPerView: 3,
             spaceBetween: 20,
             loop: true,
             autoplay: {
@@ -97,7 +97,7 @@ const advantageSlider = new Swiper('.advantage-slider-container', {
         },
         // when window width is >= 1200px
         1200: {
-            slidesPerView: 5,
+            slidesPerView: 3,
             spaceBetween: 20,
             loop: false,
             autoplay: false,
