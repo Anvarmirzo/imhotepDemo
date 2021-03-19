@@ -1726,10 +1726,6 @@ fieldset {
 }
 
 .installment {
-  background-image: url("../img/installment-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
   position: relative;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -2243,10 +2239,6 @@ fieldset {
 }
 
 /* advantage slider */
-
-.advantage {
-  padding-bottom: 6px;
-}
 
 .advantage-slider-container {
   max-width: 100%;
