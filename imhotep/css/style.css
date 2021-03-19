@@ -1731,17 +1731,15 @@ fieldset {
   background-position: center center;
   background-size: cover;
   position: relative;
-  padding-top: 232px;
-  padding-bottom: 95px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .installment-year {
-  width: 48%;
-  position: absolute;
-  top: 232px;
   background-color: #3763FF;
-  border-radius: 0 35px 35px 0px;
   padding: 32px 55px;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.35);
 }
 
 .installment-year p {
@@ -1757,21 +1755,83 @@ fieldset {
   font-size: 300px;
 }
 
-.installment-card {
-  background: #FFFFFF;
+.installment-form {
+  text-align: center;
+  background-color: #FFFFFF;
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
-  border-radius: 15px;
-  padding: 29px 37px;
-  margin-bottom: 195px;
+  height: 100%;
+  padding: 26px 23px 23px;
 }
 
-.installment-card h3 {
-  margin-bottom: 43px;
+.installment-form h4 {
+  font-weight: 800;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #1C2A5C;
+  margin-bottom: 30px;
 }
 
-.installment-card p {
-  margin-bottom: 28px;
+.installment-form fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.installment-form label {
+  margin-bottom: 9px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #1C2A5C;
+}
+
+.installment-form input {
+  margin-bottom: 18px;
+  border: 2px solid #1C2A5C;
+  border-radius: 10px;
+  padding: 9px;
+}
+
+.installment-form input::-webkit-input-placeholder {
+  font-style: italic;
+  font-size: 15px;
+  color: #C4C4C4;
+  text-align: center;
+}
+
+.installment-form input::-moz-placeholder {
+  font-style: italic;
+  font-size: 15px;
+  color: #C4C4C4;
+  text-align: center;
+}
+
+.installment-form input:-ms-input-placeholder {
+  font-style: italic;
+  font-size: 15px;
+  color: #C4C4C4;
+  text-align: center;
+}
+
+.installment-form input::-ms-input-placeholder {
+  font-style: italic;
+  font-size: 15px;
+  color: #C4C4C4;
+  text-align: center;
+}
+
+.installment-form input::placeholder {
+  font-style: italic;
+  font-size: 15px;
+  color: #C4C4C4;
+  text-align: center;
 }
 
 .installment-contact {
@@ -2998,11 +3058,6 @@ fieldset {
     font-size: 120px;
   }
 
-  .installment-card {
-    margin-top: 8px;
-    margin-bottom: 70px;
-  }
-
   .questions-row {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: reverse !important;
@@ -3281,10 +3336,6 @@ fieldset {
 
   .offer-card--white h4 {
     font-size: 13px;
-  }
-
-  .installment-card {
-    padding: 28px 13px;
   }
 
   .installment-contact a {
