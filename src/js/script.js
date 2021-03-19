@@ -5,4 +5,5 @@ document.addEventListener('DOMContentLoaded', function () {
     @@include('popups.js')
     @@include('swiper-sliders-config.js')
     @@include('same-hieght.js')
+    @@include('aos-config.js')
 }, false);

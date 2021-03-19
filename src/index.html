@@ -8,6 +8,8 @@
     <title>Imhotep Stroy</title>
     <!-- Swiper library CSS -->
     <link rel="stylesheet" href="plugins/swiper-bundle.min.css">
+    <!-- AOS library CSS -->
+    <link rel="stylesheet" href="plugins/aos.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -46,9 +48,8 @@
     <!-- header -->
     <header class="header">
         <div class="container header--flex">
-            <div class="header-bg-cover"></div>
             <!-- header content -->
-            <div class="header-content">
+            <div class="header-content" data-aos="fade-right">
                 <h2>Многоэтажный торговый комплекс</h2>
                 <p>Магазин за 3 года рассрочки без процентов, а готовый объект уже через 2 года
                 </p>
@@ -96,9 +97,9 @@
         <!-- section about -->
         <section class="about">
             <div class="container">
-                <h3>О нас</h3>
+                <h3 data-aos="fade-right">О нас</h3>
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div data-aos="fade-right" class="col-lg-6">
                         <div class="about-text-wrapper mb-55">
                             <p>Компания «IMHOTEP STROY» функционирует с 2010 года. Высококвалифицированные сотрудники,
                                 качество и оперативность, широкий спектр строительных, реставрационных,
@@ -113,7 +114,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 about-content-images">
+                    <div data-aos="fade-left" class="col-lg-6 about-content-images">
                         <img src="./img/about-content-bg.jpg" alt="Здание Самарканд">
                         <img class="about-content-absolute" src="./img/about-rel.jpg" alt="Здание с людьми">
                     </div>
@@ -123,8 +124,9 @@
         <!-- section advantage -->
         <section class="advantage">
             <div class="container">
-                <h3>Наши преимущества</h3>
-                <p>Магазины под ключ, которые соответствуют государственным стандартам, в торговом центре площадью
+                <h3 data-aos="fade-right">Наши преимущества</h3>
+                <p data-aos="fade-right">Магазины под ключ, которые соответствуют государственным стандартам, в торговом
+                    центре площадью
                     18
                     000
                     кв.м.
@@ -135,20 +137,20 @@
                         <div class="advantage-slider-container p-relative">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <div class="advantage-card">
+                                    <div data-aos="fade-up-right" data-aos-duration="600" class="advantage-card">
                                         <span class="advantage-check-icon mb-15"></span>
                                         <p>Густонаселённый район города, который не оставит ваш магазин без клиентов
                                         </p>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="advantage-card">
+                                    <div data-aos="fade-up" data-aos-duration="700" class="advantage-card">
                                         <span class="advantage-check-icon mb-15"></span>
                                         <p>Развитая инфраструктура со всеми необходимыми условиями
                                         </p>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                <div data-aos="fade-up-left" data-aos-duration="800" class="swiper-slide">
                                     <div class="advantage-card">
                                         <span class="advantage-check-icon mb-15"></span>
                                         <p>Наличие удобной и просторной парковки</p>
@@ -165,8 +167,8 @@
         <!-- section gallery -->
         <section class="gallery">
             <div class="container">
-                <h3>Фотогалерея</h3>
-                <div class="row gallery-slider-parent">
+                <h3 data-aos="fade-right">Фотогалерея</h3>
+                <div data-aos="zoom-in" class="row gallery-slider-parent">
                     <!-- gallery slider -->
                     <div class="gallery-slider-container">
                         <div class="swiper-wrapper">
@@ -198,9 +200,9 @@
         <!-- section installment -->
         <section class="installment">
             <div class="container">
-                <h3>Условия рассрочки</h3>
+                <h3 data-aos="fade-right">Условия рассрочки</h3>
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div data-aos="fade-up-right" class="col-lg-6">
                         <div class="installment-form">
                             <h4>Оставьте заявку прямо сейчас</h4>
                             <form action="">
@@ -214,7 +216,7 @@
                             </form>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div data-aos="fade-up-left" class="col-lg-6">
                         <div class="installment-year">
                             <div class="installment-year-title">
                                 <h3>Рассрочка</h3>
@@ -237,21 +239,21 @@
         <!-- section why -->
         <section class="why">
             <div class="container">
-                <h3>Почему мы</h3>
+                <h3 data-aos="fade-right">Почему мы</h3>
                 <div class="row justify-content-center">
-                    <div class="col-lg-3 why-card--margin">
+                    <div data-aos="flip-up" data-aos-duration="500" class="col-lg-3 why-card--margin">
                         <div class="why-card">
                             <span class="circle-icon"></span>
                             <p>Удобная круговая планировка, которая обеспечит все магазины проходимостью</p>
                         </div>
                     </div>
-                    <div class="col-lg-3 why-card--margin">
+                    <div data-aos="flip-up" data-aos-duration="600" class="col-lg-3 why-card--margin">
                         <div class="why-card">
                             <span class="solves-icon"></span>
                             <p>Комплексные решения, проверенные системы и материалы, используемые при строительстве</p>
                         </div>
                     </div>
-                    <div class="col-lg-3 why-card--margin">
+                    <div data-aos="flip-up" data-aos-duration="700" class="col-lg-3 why-card--margin">
                         <div class="why-card">
                             <span class="display-icon"></span>
                             <p> Места для размещения рекламы на лед-экранах</p>
@@ -263,19 +265,19 @@
         <!-- section partners -->
         <section class="partners">
             <div class="container">
-                <h3>Наши партнеры</h3>
+                <h3 data-aos="fade-right">Наши партнеры</h3>
                 <div class="row partners-md-flex">
-                    <div class="col-lg-4 col-10 mb-md-20">
+                    <div data-aos="flip-down" data-aos-duration="600" class="col-lg-4 col-10 mb-md-20">
                         <div class="partners-card">
                             <img src="img/gtg.png" alt="GTG Company">
                         </div>
                     </div>
-                    <div class="col-lg-4 col-10 mb-md-20">
+                    <div data-aos="flip-down" data-aos-duration="700" class="col-lg-4 col-10 mb-md-20">
                         <div class="partners-card">
                             <img src="img/vibro.png" alt="Vibro Press">
                         </div>
                     </div>
-                    <div class="col-lg-4 col-10 mb-md-20">
+                    <div data-aos="flip-down" data-aos-duration="800" class="col-lg-4 col-10 mb-md-20">
                         <div class="partners-card">
                             <img src="img/fixer.png" alt="Fixer Grand Filler">
                         </div>
@@ -288,11 +290,11 @@
         <!-- section questions -->
         <section class="questions">
             <div class="container">
-                <h3>Часто задаваемые вопросы</h3>
+                <h3 data-aos="fade-right">Часто задаваемые вопросы</h3>
                 <!-- questions slider -->
                 <div class="questions-slider-container pt-20 pb-20">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
+                        <div data-aos="zoom-in" data-aos-duration="600" class="swiper-slide">
                             <div class="questions-card">
                                 <span class="question-icon"></span>
                                 <h4>Какой этаж свободен?</h4>
@@ -300,14 +302,14 @@
                                     менеджер свяжется с Вами в течение 24ч.</p>
                             </div>
                         </div>
-                        <div class="swiper-slide">
+                        <div data-aos="zoom-in" data-aos-duration="700" class="swiper-slide">
                             <div class="questions-card">
                                 <span class="question-icon"></span>
                                 <h4>Когда торговый центр будет готов? </h4>
                                 <p>Сдача объекта планируется на 2023 год.</p>
                             </div>
                         </div>
-                        <div class="swiper-slide">
+                        <div data-aos="zoom-in" data-aos-duration="800" class="swiper-slide">
                             <div class="questions-card">
                                 <span class="question-icon"></span>
                                 <h4>Какова площадь помещений?</h4>
@@ -322,17 +324,17 @@
         <!-- section contacts -->
         <section class="contacts">
             <div class="container">
-                <h3>Наши контакты</h3>
+                <h3 data-aos="fade-right">Наши контакты</h3>
                 <div class="map-info">
-                    <div class="map-wrapper">
-                        <div class="map-info-card contact-manager">
+                    <div data-aos="fade-left" class="map-wrapper">
+                        <div data-aos="fade-left" data-aos-duration="700" class="map-info-card contact-manager">
                             <h5>Менеджер</h5>
                             <p><a href="tel:+79999999999"><span class="phone-icon"></span>+7 999 999 99 99</a>
                             </p>
                             <p><a class="m-0" href="mailto:mymail@gmail.com"><span
                                         class="mail-icon"></span>mymail@gmail.com</a></p>
                         </div>
-                        <div class="map-info-card contact-support">
+                        <div data-aos="fade-left" data-aos-duration="800" class="map-info-card contact-support">
                             <h5>Поддержка</h5>
                             <p><a href="tel:+79999999999"><span class="phone-icon"></span>+7 999 999 99 99</a>
                             </p>
@@ -349,7 +351,7 @@
         <!-- contacts form -->
         <div class="form">
             <div class="container">
-                <div class="row contacts-form--flex">
+                <div data-aos="flip-up" class="row contacts-form--flex">
                     <div class="col-xxl-6 col-lg-8">
                         <div class="contacts-form-wrapper">
                             <h4>Заполните форму и получите расчет стоимости</h4>
@@ -430,6 +432,8 @@
 
     <!-- Swiper library JS -->
     <script src="plugins/swiper-bundle.min.js"></script>
+    <!-- AOS library JS -->
+    <script src="plugins/aos.js"></script>
     <!-- Custom JS -->
     <script src="js/script.js"></script>
 </body>

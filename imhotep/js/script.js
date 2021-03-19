@@ -243,4 +243,11 @@ document.addEventListener('DOMContentLoaded', function () {
   setMaxHeight('.same-height');
   setMaxHeight('.advantage-slider-container .swiper-slide');
   setMaxHeight('.questions-slider-container .swiper-slide');
+  AOS.init({
+    offset: 200,
+    duration: 600,
+    easing: 'ease-in-sine',
+    delay: 100,
+    once: true
+  });
 }, false);

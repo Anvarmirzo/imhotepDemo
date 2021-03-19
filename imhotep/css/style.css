@@ -2272,6 +2272,12 @@ fieldset {
   padding-bottom: 53px;
 }
 
+.gallery-slider-parent .swiper-wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: -30px;
+}
+
 .gallery-slider-parent .swiper-slide {
   display: -webkit-box;
   display: -ms-flexbox;

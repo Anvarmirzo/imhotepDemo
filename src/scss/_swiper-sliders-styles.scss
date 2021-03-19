@@ -12,6 +12,12 @@
         margin-top: 32px;
     }
 
+    .swiper-wrapper {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-bottom: -30px;
+    }
+
     .swiper-slide {
         display: flex;
         justify-content: center;
