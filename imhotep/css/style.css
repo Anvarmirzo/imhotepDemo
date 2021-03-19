@@ -935,6 +935,17 @@ h3 {
   height: 94px;
 }
 
+.justify-content-between {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
 .mt-11 {
   margin-top: 11px;
 }
@@ -1525,6 +1536,16 @@ fieldset {
 }
 
 .about-text-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
@@ -1534,8 +1555,9 @@ fieldset {
 
 .about-text-wrapper p {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 25px;
   line-height: 24px;
+  color: #363636;
 }
 
 .about-text-wrapper h4 {

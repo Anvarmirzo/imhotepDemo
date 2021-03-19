@@ -165,3 +165,9 @@ h3 {
         height: 94px;
     }
 }
+
+.justify-content-between {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
