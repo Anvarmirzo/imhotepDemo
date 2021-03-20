@@ -3186,6 +3186,10 @@ fieldset {
     margin-bottom: 0;
   }
 
+  .contacts {
+    padding-bottom: 350px;
+  }
+
   .contacts .map-info-card {
     padding: 23px 26px;
   }
@@ -3193,13 +3197,19 @@ fieldset {
   .contacts .map-info-card.contact-support {
     bottom: -312px;
     right: 0;
-    left: auto;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 
   .contacts .map-info-card.contact-manager {
     bottom: -155px;
     right: 0;
-    left: auto;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 
   .contacts .map-wrapper {
@@ -3224,10 +3234,12 @@ fieldset {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    width: 100%;
   }
 
   .footer-menu {
     margin-bottom: 56px;
+    width: 100%;
   }
 
   .footer-menu li {
@@ -3286,6 +3298,10 @@ fieldset {
 
   .contacts .map-info-card {
     width: 100%;
+  }
+
+  .contacts .map-wrapper {
+    width: auto;
   }
 
   .contacts .map-wrapper {

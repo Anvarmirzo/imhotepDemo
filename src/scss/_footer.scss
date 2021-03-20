@@ -30,6 +30,7 @@
         @include block_991 {
             flex-direction: column-reverse;
             align-items: center;
+            width: 100%;
         }
     }
 
@@ -42,6 +43,7 @@
 
         @include block_991 {
             margin-bottom: 56px;
+            width: 100%;
 
             li {
                 margin-right: 0;
