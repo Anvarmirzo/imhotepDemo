@@ -899,6 +899,10 @@ h3 {
   padding-bottom: 8px;
 }
 
+.no-border {
+  border: 0 !important;
+}
+
 .track-line {
   position: absolute;
   background-color: #D3D3D3;

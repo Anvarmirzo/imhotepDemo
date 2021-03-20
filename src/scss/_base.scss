@@ -112,6 +112,10 @@ h3 {
     }
 }
 
+.no-border {
+    border: 0 !important;
+}
+
 .row-lg-reverse {
     @include block_991 {
         flex-direction: column-reverse;
