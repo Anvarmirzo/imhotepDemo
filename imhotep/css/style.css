@@ -798,6 +798,15 @@ html {
   font-family: 'Lato', sans-serif;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
+section {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -1602,8 +1611,8 @@ fieldset {
 }
 
 .about {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .about-text-wrapper {
@@ -1675,8 +1684,8 @@ fieldset {
 }
 
 .advantage {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .advantage .container > p {
@@ -1686,8 +1695,8 @@ fieldset {
 }
 
 .gallery {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .offer-cards {
@@ -1778,8 +1787,8 @@ fieldset {
 
 .installment {
   position: relative;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .installment-year {
@@ -1934,8 +1943,8 @@ fieldset {
 }
 
 .why {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .why-card {
@@ -1960,8 +1969,8 @@ fieldset {
 }
 
 .partners {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .partners-card {
@@ -1992,8 +2001,8 @@ fieldset {
 }
 
 .questions {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   position: relative;
 }
 
@@ -2022,8 +2031,8 @@ fieldset {
 }
 
 .contacts {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   position: relative;
 }
 
@@ -2324,20 +2333,12 @@ fieldset {
 /* advantage slider */
 
 .advantage-slider-container {
-  max-width: 100%;
+  width: 100%;
   height: 100%;
   margin-top: 31px;
-}
-
-.advantage .swiper-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 20px;
   overflow: hidden;
+  padding: 20px;
+  margin-bottom: -30px;
 }
 
 .advantage-card {

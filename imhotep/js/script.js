@@ -143,47 +143,23 @@ document.addEventListener('DOMContentLoaded', function () {
   /* Advantage slider */
 
   var advantageSlider = new Swiper('.advantage-slider-container', {
-    slidesPerView: 3,
     spaceBetween: 21,
+    slidesPerView: 3,
     breakpoints: {
-      // when window width is >= 320px
       320: {
-        slidesPerView: 1,
-        spaceBetween: 21,
-        loop: true,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false
-        }
+        slidesPerView: 1
       },
-      // when window width is >= 768px
+      480: {
+        slidesPerView: 1
+      },
       768: {
-        slidesPerView: 1,
-        spaceBetween: 40,
-        loop: true,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false
-        }
+        slidesPerView: 2
       },
-      // when window width is >= 992px
-      992: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-        loop: true,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false
-        }
-      },
-      // when window width is >= 1200px
-      1200: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-        loop: false,
-        autoplay: false
+      991: {
+        slidesPerView: 3
       }
-    }
+    },
+    breakpointsBase: 'container'
   });
   /* Questions slider */
 
@@ -245,7 +221,7 @@ document.addEventListener('DOMContentLoaded', function () {
   setMaxHeight('.questions-slider-container .swiper-slide');
   AOS.init({
     offset: 200,
-    duration: 600,
+    duration: 500,
     easing: 'ease-in-sine',
     delay: 100,
     once: true
