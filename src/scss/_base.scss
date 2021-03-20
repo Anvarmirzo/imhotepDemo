@@ -103,6 +103,9 @@ h3 {
     font-size: 35px;
     color: $section-title-color;
     margin-bottom: 40px;
+    border-bottom: 2px solid #1C2A5C;
+    width: max-content;
+    padding-bottom: 8px;
 
     @include block_480 {
         font-size: 20px;

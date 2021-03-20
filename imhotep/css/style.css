@@ -892,6 +892,11 @@ h3 {
   font-size: 35px;
   color: #1C2A5C;
   margin-bottom: 40px;
+  border-bottom: 2px solid #1C2A5C;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding-bottom: 8px;
 }
 
 .track-line {
