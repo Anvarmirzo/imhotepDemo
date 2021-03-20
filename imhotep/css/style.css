@@ -1133,6 +1133,10 @@ h3 {
   transition: 0.5s;
 }
 
+.burger-icon.active-three {
+  position: fixed;
+}
+
 .burger-icon.active-three .hamburger-three {
   background: rgba(0, 0, 0, 0);
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
