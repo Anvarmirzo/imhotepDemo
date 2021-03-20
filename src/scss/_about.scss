@@ -2,10 +2,6 @@
     padding-top: 50px;
     padding-bottom: 50px;
 
-    @include block_767 {
-        padding-bottom: 74px;
-    }
-
     .col-lg-6 {
         &:first-child {
             @include block_991 {

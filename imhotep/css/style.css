@@ -3288,14 +3288,6 @@ fieldset {
     width: 70%;
   }
 
-  .about {
-    padding-bottom: 74px;
-  }
-
-  .partners {
-    padding-bottom: 184px;
-  }
-
   .contacts .map-info-card {
     width: 100%;
   }
@@ -3336,14 +3328,6 @@ fieldset {
 
   .offer img {
     width: 100%;
-  }
-
-  .installment {
-    padding-bottom: 70px;
-  }
-
-  .partners {
-    padding-top: 40px;
   }
 
   .contacts-form-wrapper {
