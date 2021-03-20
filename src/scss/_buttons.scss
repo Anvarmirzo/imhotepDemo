@@ -16,7 +16,6 @@
 
     @include block_480 {
         font-size: 8px;
-        padding: 8px 66px 8px 12px;
     }
 }
 
@@ -140,14 +139,6 @@
                 background-repeat: no-repeat;
                 background-position: center center;
                 border-radius: 50%;
-            }
-        }
-
-        @include block_480 {
-            padding: 8px 66px 8px 12px;
-
-            &::after {
-                width: 25px;
             }
         }
     }

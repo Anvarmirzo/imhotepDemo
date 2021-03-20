@@ -3311,19 +3311,10 @@ fieldset {
 
   .primary-btn {
     font-size: 8px;
-    padding: 8px 66px 8px 12px;
   }
 
   .primary-btn.dot-btn {
     padding: 8px 34px 8px 12px;
-  }
-
-  .nav-dropdown .primary-btn {
-    padding: 8px 66px 8px 12px;
-  }
-
-  .nav-dropdown .primary-btn::after {
-    width: 25px;
   }
 
   .number-form-wrapper label {

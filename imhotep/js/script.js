@@ -138,6 +138,20 @@ document.addEventListener('DOMContentLoaded', function () {
     pagination: {
       el: '.swiper-pagination',
       clickable: true
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1
+      },
+      480: {
+        slidesPerView: 1
+      },
+      768: {
+        slidesPerView: 2
+      },
+      991: {
+        slidesPerView: 3
+      }
     }
   });
   /* Advantage slider */
@@ -158,8 +172,8 @@ document.addEventListener('DOMContentLoaded', function () {
       991: {
         slidesPerView: 3
       }
-    },
-    breakpointsBase: 'container'
+    } // breakpointsBase: 'container'
+
   });
   /* Questions slider */
 

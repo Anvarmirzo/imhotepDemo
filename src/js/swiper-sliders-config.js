@@ -53,6 +53,20 @@ const gallerySlider = new Swiper('.gallery-slider-container', {
         el: '.swiper-pagination',
         clickable: true,
     },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+        },
+        480: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        991: {
+            slidesPerView: 3,
+        },
+    },
 });
 
 /* Advantage slider */
@@ -73,7 +87,7 @@ const advantageSlider = new Swiper('.advantage-slider-container', {
             slidesPerView: 3,
         },
     },
-    breakpointsBase: 'container'
+    // breakpointsBase: 'container'
 
 });
 
