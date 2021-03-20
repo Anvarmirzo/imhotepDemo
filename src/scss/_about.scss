@@ -6,6 +6,14 @@
         padding-bottom: 74px;
     }
 
+    .col-lg-6 {
+        &:first-child {
+            @include block_991 {
+                margin-bottom: 40px;
+            }
+        }
+    }
+
     &-text-wrapper {
         display: flex;
         flex-direction: column;

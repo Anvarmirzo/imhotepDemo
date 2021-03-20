@@ -7,6 +7,14 @@
         padding-bottom: 70px;
     }
 
+    .col-lg-6 {
+        &:first-child {
+            @include block_991 {
+                margin-bottom: 40px;
+            }
+        }
+    }
+
     &-year {
         height: 100%;
         background-color: #3763FF;
