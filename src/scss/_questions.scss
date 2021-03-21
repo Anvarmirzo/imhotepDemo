@@ -3,6 +3,12 @@
     padding-bottom: 50px;
     position: relative;
 
+    .col-lg-4 {
+        @include block_991 {
+            margin-bottom: 25px;
+        }
+    }
+
     &-card {
         background-color: #3763FF;
         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
@@ -11,6 +17,10 @@
         max-width: 327px;
         text-align: center;
         color: #fff;
+
+        @include block_991 {
+            max-width: 100%;
+        }
 
         h4 {
             font-weight: bold;

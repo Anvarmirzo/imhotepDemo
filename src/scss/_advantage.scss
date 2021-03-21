@@ -2,9 +2,40 @@
     padding-top: 50px;
     padding-bottom: 50px;
 
+    .col-lg-4 {
+        margin-bottom: 40px;
+    }
+
+    &-card {
+        background-color: #FFFFFF;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+        padding: 25px 17px;
+        font-size: 23px;
+        text-align: center;
+        height: 100%;
+
+        p {
+            font-weight: bold;
+            font-size: 23px;
+            color: #3E3D3D;
+
+            @include block_480 {
+                font-size: 15px;
+            }
+        }
+
+        &-desk {
+            margin-top: 31px;
+        }
+    }
+
     .container>p {
         font-weight: 600;
         font-size: 25px;
         color: #343434;
+
+        @include block_480 {
+            font-size: 15px;
+        }
     }
 }

@@ -4,7 +4,7 @@
     padding-bottom: 50px;
 
     .col-lg-6 {
-        &:first-child {
+        &:last-child {
             @include block_991 {
                 margin-bottom: 40px;
             }
@@ -30,12 +30,20 @@
             p {
                 font-weight: 800;
                 font-size: 40px;
+
+                @include block_480 {
+                    font-size: 15px;
+                }
             }
 
             span {
                 font-weight: bold;
                 font-size: 150px;
                 line-height: 1;
+
+                @include block_480 {
+                    font-size: 100px;
+                }
             }
         }
 
@@ -45,6 +53,10 @@
             p {
                 font-weight: 600;
                 font-size: 24px;
+
+                @include block_480 {
+                    font-size: 15px;
+                }
             }
         }
 
@@ -78,6 +90,10 @@
             font-weight: bold;
             font-size: 20px;
             color: #1C2A5C;
+
+            @include block_480 {
+                font-size: 15px;
+            }
         }
 
         input {
@@ -91,11 +107,19 @@
                 font-size: 15px;
                 color: #C4C4C4;
                 text-align: center;
+
+                @include block_480 {
+                    font-size: 10px;
+                }
             }
         }
 
         .secondary-btn {
             margin: 21px auto 0;
+
+            @include block_480 {
+                font-size: 10px;
+            }
         }
     }
 

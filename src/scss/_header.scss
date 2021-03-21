@@ -6,6 +6,10 @@
     padding-bottom: 113px;
     background-position: center center;
 
+    @include block_1199 {
+        background-position: -90px center;
+    }
+
     * {
         z-index: 1;
     }

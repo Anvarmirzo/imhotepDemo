@@ -26,7 +26,7 @@
             color: #363636;
 
             @include block_480 {
-                font-size: 13px;
+                font-size: 15px;
             }
         }
 
@@ -36,6 +36,10 @@
             color: #1C2A5C;
             margin-top: 22px;
             margin-bottom: 27px;
+
+            @include block_480 {
+                font-size: 15px;
+            }
         }
     }
 

@@ -38,22 +38,31 @@
         opacity: 0.7;
         filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
 
+        @include block_575 {
+            text-align: center;
+        }
+
         &.swiper-slide-active {
             transform: scale(1);
             opacity: 1;
             filter: drop-shadow(0);
         }
+
+        img {
+            @include block_575 {
+                max-width: 90%;
+            }
+        }
     }
 }
 
 /* advantage slider */
-.advantage {
+/* .advantage {
     &-slider-container {
         width: 100%;
         height: 100%;
         margin-top: 31px;
         overflow: hidden;
-
         padding: 20px;
         margin-bottom: -30px;
 
@@ -61,22 +70,7 @@
             margin-top: 34px;
         }
     }
-
-    &-card {
-        background-color: #FFFFFF;
-        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
-        padding: 25px 17px;
-        font-size: 23px;
-        text-align: center;
-        height: 100%;
-
-        p {
-            font-weight: bold;
-            font-size: 23px;
-            color: #3E3D3D;
-        }
-    }
-}
+} */
 
 /* questions slider */
 .questions-slider-container {
