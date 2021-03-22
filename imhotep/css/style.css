@@ -1481,7 +1481,7 @@ fieldset {
   left: 0;
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
-  z-index: 22;
+  z-index: 1;
 }
 
 .second-layer {
@@ -1501,7 +1501,7 @@ fieldset {
   left: 0;
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
-  z-index: 22;
+  z-index: 1;
 }
 
 .third-layer {
@@ -1521,7 +1521,7 @@ fieldset {
   left: 0;
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
-  z-index: 22;
+  z-index: 1;
 }
 
 .fourth-layer {
