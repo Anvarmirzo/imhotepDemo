@@ -1,4 +1,3 @@
-  
 <?php
 
 /* https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXXX/getUpdates,
@@ -27,4 +26,3 @@ if ($sendToTelegram && $sendToTelegram2) {
 } else {
     echo "Error";
 }
-?>
