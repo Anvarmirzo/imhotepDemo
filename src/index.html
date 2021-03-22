@@ -69,12 +69,13 @@
             <a href="##"><img src="img/logo.png" alt="Imhotep Stroy"></a>
         </div>
         <p class="number-form-subtitle mb-26">Оставьте заявку и наш менеджер свяжется с Вами в течении 5 минут</p>
-        <form action="">
+        <form class="contact-form" action="/plugins/telegram.php" method="POST">
             <fieldset>
+                <p class="contact-form__message"></p>
                 <p><label for="user-name">Ваше имя</label></p>
-                <p><input type="text" id="user-name" name="user-name" placeholder="Впишите свой вариант"></p>
+                <p><input type="text" id="name" name="user-name" placeholder="Впишите свой вариант"></p>
                 <p><label for="user-number">Номер телефона</label></p>
-                <p><input type="tel" id="user-number" name="user-number" placeholder="Впишите свой вариант"></p>
+                <p><input type="tel" id="user-number" name="phone" placeholder="Впишите свой вариант"></p>
                 <p class="number-form-btn-wrappper"><input class="secondary-btn" id="submit-number-form" type="submit"
                         value="Отправить">
                 </p>
@@ -412,6 +413,10 @@
             </div>
         </div>
     </footer>
+    <!-- Form ajax-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Form TG -->
+    <script src="/telegramform/js/telegramform.js"></script>
     <!-- Swiper library JS -->
     <script src="plugins/swiper-bundle.min.js"></script>
     <!-- AOS library JS -->

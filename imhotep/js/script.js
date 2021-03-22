@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     submitBtn.addEventListener('click', function (e) {
       // WARNING! That' only for testing, you will delete next line (e.preventDefault()) for normal work of forms
-      e.preventDefault();
+      // e.preventDefault();
       numberForm.classList.remove('show-number-form');
       successAnswer.classList.toggle('show-number-form');
     });
