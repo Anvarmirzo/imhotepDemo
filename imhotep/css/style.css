@@ -1689,7 +1689,6 @@ fieldset {
 .about-text-wrapper p {
   font-weight: 600;
   font-size: 25px;
-  line-height: 24px;
   color: #363636;
 }
 
@@ -1913,6 +1912,29 @@ fieldset {
   font-size: 24px;
 }
 
+.installment-year-desc ul {
+  margin-top: 10px;
+}
+
+.installment-year-desc li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.installment-year-desc li ::before {
+  content: '';
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 .installment-form {
   text-align: center;
   background-color: #FFFFFF;
@@ -2032,11 +2054,6 @@ fieldset {
   padding: 28px 24px;
   text-align: center;
   height: 100%;
-}
-
-.why-card--margin {
-  margin-right: 30px;
-  margin-left: 30px;
 }
 
 .why-card p {
@@ -3360,6 +3377,10 @@ fieldset {
     margin-left: 15px;
   }
 
+  .header-content {
+    margin-top: 40vh;
+  }
+
   .offer img {
     width: 100%;
   }
@@ -3436,7 +3457,7 @@ fieldset {
   }
 
   .header-content {
-    text-align: center;
+    margin-top: 35vh;
   }
 
   .header-content h2 {

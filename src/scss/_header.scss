@@ -24,14 +24,18 @@
         margin-top: 290px;
         color: $header-color;
 
+        @include block_575 {
+            margin-top: 40vh;
+        }
+
+        @include block_480 {
+            margin-top: 35vh;
+        }
+
         .primary-btn {
             padding: 13px 31px;
             font-weight: bold;
             font-size: 18px;
-        }
-
-        @include block_480 {
-            text-align: center;
         }
 
         h2 {
