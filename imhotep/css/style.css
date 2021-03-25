@@ -2431,23 +2431,6 @@ fieldset {
   filter: drop-shadow(0);
 }
 
-/* advantage slider */
-
-/* .advantage {
-    &-slider-container {
-        width: 100%;
-        height: 100%;
-        margin-top: 31px;
-        overflow: hidden;
-        padding: 20px;
-        margin-bottom: -30px;
-
-        @include block_767 {
-            margin-top: 34px;
-        }
-    }
-} */
-
 /* questions slider */
 
 .questions-slider-container {
@@ -2463,6 +2446,72 @@ fieldset {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* objects slider */
+
+.objects-gallery-top .swiper-slide {
+  height: auto;
+}
+
+.objects-gallery-top .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.objects-gallery-top .swiper-pagination {
+  display: none;
+}
+
+.objects-gallery-thumbs {
+  margin-top: 23px;
+}
+
+.objects-gallery-thumbs .swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.objects-gallery-thumbs .swiper-wrapper .swiper-slide {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.objects {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.objects-text {
+  padding: 24px 26px 25px;
+  color: #fff;
+  background-color: #3763FF;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+}
+
+.objects-text h4 {
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 33px;
+}
+
+.objects-text p {
+  font-size: 22px;
+  line-height: 23px;
 }
 
 @media (min-width: 576px) {
@@ -3305,6 +3354,19 @@ fieldset {
   .footer-menu li {
     margin-right: 0;
     margin-bottom: 20px;
+  }
+
+  .objects-gallery-top {
+    padding-bottom: 60px;
+  }
+
+  .objects-gallery-top .swiper-pagination {
+    bottom: 21px;
+    display: block;
+  }
+
+  .objects-gallery-thumbs {
+    display: none;
   }
 }
 

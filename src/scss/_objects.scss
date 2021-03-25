@@ -1,0 +1,23 @@
+.objects {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    &-text {
+        padding: 24px 26px 25px;
+        color: #fff;
+        background-color: #3763FF;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+
+        h4 {
+            margin-bottom: 16px;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 33px;
+        }
+
+        p {
+            font-size: 22px;
+            line-height: 23px;
+        }
+    }
+}
