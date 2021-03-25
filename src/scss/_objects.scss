@@ -13,11 +13,21 @@
             font-weight: 600;
             font-size: 30px;
             line-height: 33px;
+
+            @include block_480 {
+                font-size: 18px;
+                line-height: 21px;
+            }
         }
 
         p {
             font-size: 22px;
             line-height: 23px;
+
+            @include block_480 {
+                font-size: 12px;
+                line-height: 15px;
+            }
         }
     }
 }

@@ -3607,4 +3607,14 @@ fieldset {
   .gallery-slider-parent {
     padding-bottom: 41px;
   }
+
+  .objects-text h4 {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .objects-text p {
+    font-size: 12px;
+    line-height: 15px;
+  }
 }
